@@ -117,7 +117,7 @@ console.log("Date.now()", Date.now(), remainingTime)
           Wishing you all the best as you embark on this incredible journey. You've got this! Can't wait to hear about your successful visa interview.</p>
       </section>
       <h2>⏰ Countdown Timer</h2>
-      {remainingTime < 0 ? 
+      {remainingTime > 0 ? 
       <section className="countdown-section"  style={{display: "flex", justifyContent: "space-evenly"}}>
       {/* <CountdownCircleTimer
         {...timerProps}

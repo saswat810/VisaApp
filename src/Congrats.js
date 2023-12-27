@@ -108,7 +108,7 @@ console.log("Date.now()", Date.now(), remainingTime)
   return (
     <div className="wishes-container">
       <header>
-        <h2>{`Congratulations, My Dear Friend!`}</h2>
+        <h2>{`🌟Congratulations Sahithi🌟`}</h2>
       </header>
       {/* <section className="good-luck-section">
         <h4>🌟 Good Luck on Your Visa Interview! 🌟</h4>
@@ -117,85 +117,7 @@ console.log("Date.now()", Date.now(), remainingTime)
           Wishing you all the best as you embark on this incredible journey. You've got this! Can't wait to hear about your successful visa interview.</p>
       </section> */}
       <h2>⏰ Countdown Timer</h2>
-      {remainingTime < 0 ? 
-      <section className="countdown-section"  style={{display: "flex", justifyContent: "space-evenly"}}>
-      {/* <CountdownCircleTimer
-        {...timerProps}
-        colors="#7E2E84"
-        duration={daysDuration}
-        initialRemainingTime={remainingTime}
-      >
-        {({ elapsedTime, color }) => (
-          <span style={{ color }}>
-            {renderTime("days", getTimeDays(daysDuration - elapsedTime))}
-          </span>
-        )}
-      </CountdownCircleTimer> */}
-       
-      <CountdownCircleTimer
-        key={key}
-        {...timerProps}
-        colors="#D14081"
-        duration={daySeconds}
-        initialRemainingTime={remainingTime % daySeconds}
-        onComplete={(totalElapsedTime) => ({
-          shouldRepeat: remainingTime - totalElapsedTime > hourSeconds
-        })}
-      >
-        {({ elapsedTime, color }) => (
-          <span style={{ color }}>
-            {renderTime("hours", getTimeHours(daySeconds - elapsedTime))}
-          </span>
-        )}
-      </CountdownCircleTimer>
-      <CountdownCircleTimer
-        key={key}
-        {...timerProps}
-        colors="#EF798A"
-        duration={hourSeconds}
-        initialRemainingTime={remainingTime % hourSeconds}
-        onComplete={(totalElapsedTime) => ({
-          shouldRepeat: remainingTime - totalElapsedTime > minuteSeconds
-        })}
-      >
-        {({ elapsedTime, color }) => (
-          <span style={{ color }}>
-            {renderTime("minutes", getTimeMinutes(hourSeconds - elapsedTime))}
-          </span>
-        )}
-      </CountdownCircleTimer>
-      <CountdownCircleTimer
-        key={key}
-        {...timerProps}
-        colors="#218380"
-        duration={minuteSeconds}
-        initialRemainingTime={remainingTime % minuteSeconds}
-        onComplete={(totalElapsedTime) => ({
-          shouldRepeat: remainingTime - totalElapsedTime > 0
-        })}
-      >
-        {({ elapsedTime, color }) => (
-          <span style={{ color }}>
-            {renderTime("seconds", getTimeSeconds(elapsedTime))}
-          </span>
-        )}
-      </CountdownCircleTimer> 
-      :
-
-        {/* <h2>⏰ Countdown Timer</h2>
-        <Countdown date={visaInterviewDate} renderer={renderer} />
-        <h2>⏰ Countdown Timer</h2>
-        <CountdownCircleTimer
-          isPlaying
-          duration={visaInterviewDate *60}
-          colors={[['#F26419', 0.33], ['#6FA3EF', 0.33], ['#31C48D', 0.33]]}
-        >
-          {renderTime}
-         
-        </CountdownCircleTimer> */}
-      </section>
-      :
-      <>
+     
       <section className="countdown-section"  style={{display: "flex", justifyContent: "space-evenly"}}>
         <CountdownCircleTimer
         key={key}
@@ -251,8 +173,7 @@ console.log("Date.now()", Date.now(), remainingTime)
           <div>  It's Processing Time! Best of Luck and Have a great journey ahead!!</div>
 
       </section>
-      </>
-}
+
 
          <div class="gif_container">
          <img src="https://media0.giphy.com/media/T86i6yDyOYz7J6dPhf/giphy.gif" alt="Cute animated illustration"/>
