@@ -110,11 +110,10 @@ console.log("Date.now()", Date.now(), remainingTime)
         <h2>{`Best Wishes, My Dear Friend!`}</h2>
       </header>
       <section className="good-luck-section">
-        <h3>🌟 Good Luck on Your Visa Interview! 🌟</h3>
+        <h4>🌟 Good Luck on Your Visa Interview! 🌟</h4>
         <p>
           Dear Sahithi,<br />
-          Wishing you all the best as you embark on this incredible journey. You've got this!
-        </p>
+          Wishing you all the best as you embark on this incredible journey. You've got this! Can't wait to hear about your successful visa interview.</p>
       </section>
       <h2>⏰ Countdown Timer</h2>
       <section className="countdown-section"  style={{display: "flex", justifyContent: "space-evenly"}}>
@@ -192,13 +191,14 @@ console.log("Date.now()", Date.now(), remainingTime)
       </section>
       <div class="gif_container">
       <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="Cute animated illustration"/>
-            </div>        <p>Your future is waiting for you. Best of luck!</p>
+            </div>      
       <footer>
+      <p style={{fontWeight: "bold"}}>Your future is waiting for you. Best of luck!</p>
         <p>
-          Remember Sahithi, you've got all your friends cheering you on! Wishing you all the best
-          in your visa interview—may success and positive vibes surround you. 🚀💖
+          Remember Sahithi, you've got this friend cheering you on! Wishing you all the best
+          in your visa interview <br/>May success and positive vibes surround you. 🚀💖
         </p>
-        <p>With love and best wishes,<br />Saswath </p>
+        <p>With Best wishes and Love,<br />Saswath </p>
       </footer>
     </div>
   );
