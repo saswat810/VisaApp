@@ -1,0 +1,62 @@
+/* WishesWebsite.css */
+
+body {
+  font-family: 'Your Beautiful Font', sans-serif; /* Replace 'Your Beautiful Font' with the actual font name */
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.wishes-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  color: #6FA3EF;
+}
+
+.good-luck-section, .messages-section, .virtual-charms-section, .countdown-section, .well-wishing-wall-section {
+  margin-bottom: 20px;
+}
+
+.good-luck-section h2, .messages-section h2, .virtual-charms-section h2, .countdown-section h2, .well-wishing-wall-section h2 {
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #F26419;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+}
+
+footer p {
+  margin: 5px 0;
+}
+.gif_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 416px;
+}
+
+/* Add more styles as needed */
