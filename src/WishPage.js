@@ -7,7 +7,7 @@ import { CountdownCircleTimer } from 'react-countdown-circle-timer';
 // React component for the wishes website
 const WishPage = () => {
   // Set the visa interview date (replace with the actual date)
-  const visaInterviewDate = new Date('2023-12-27T09:57:00');
+  const visaInterviewDate = new Date('2023-12-27T13:30:00');
 
   // Calculate the time remaining until the visa interview
   const calculateTimeRemaining = () => {
