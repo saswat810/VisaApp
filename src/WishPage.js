@@ -7,8 +7,8 @@ import { CountdownCircleTimer } from 'react-countdown-circle-timer';
 // React component for the wishes website
 const WishPage = () => {
   // Set the visa interview date (replace with the actual date)
-  const visaInterviewDate = new Date('2023-12-27T13:30:00');
-
+  const visaInterviewDate = new Date('2023-12-27T09:57:00');
+  const [key, setKey] = useState(0);
   // Calculate the time remaining until the visa interview
   const calculateTimeRemaining = () => {
     const now = new Date();
@@ -73,7 +73,7 @@ const getTimeMinutes = (time) => ((time % hourSeconds) / minuteSeconds) | 0;
 const getTimeHours = (time) => ((time % daySeconds) / hourSeconds) | 0;
 //const getTimeDays = (time) => (time / daySeconds) | 0;
 const stratTime = new Date() / 1000; // use UNIX timestamp in seconds
-const endTime = new Date('2023-12-27T10:29:00')/1000; // use UNIX timestamp in seconds
+const endTime = new Date('2023-12-27T13:30:00')/1000; // use UNIX timestamp in seconds
 
 const remainingTime = endTime - stratTime;
 const renderTime = (dimension, time) => {
@@ -116,6 +116,7 @@ console.log("Date.now()", Date.now(), remainingTime)
           Wishing you all the best as you embark on this incredible journey. You've got this!
         </p>
       </section>
+      <h2>⏰ Countdown Timer</h2>
       <section className="countdown-section"  style={{display: "flex", justifyContent: "space-evenly"}}>
       {/* <CountdownCircleTimer
         {...timerProps}
@@ -130,6 +131,7 @@ console.log("Date.now()", Date.now(), remainingTime)
         )}
       </CountdownCircleTimer> */}
       <CountdownCircleTimer
+        key={key}
         {...timerProps}
         colors="#D14081"
         duration={daySeconds}
@@ -145,6 +147,7 @@ console.log("Date.now()", Date.now(), remainingTime)
         )}
       </CountdownCircleTimer>
       <CountdownCircleTimer
+        key={key}
         {...timerProps}
         colors="#EF798A"
         duration={hourSeconds}
@@ -160,6 +163,7 @@ console.log("Date.now()", Date.now(), remainingTime)
         )}
       </CountdownCircleTimer>
       <CountdownCircleTimer
+        key={key}
         {...timerProps}
         colors="#218380"
         duration={minuteSeconds}
