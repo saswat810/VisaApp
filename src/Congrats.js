@@ -6,7 +6,7 @@ import { CountdownCircleTimer } from 'react-countdown-circle-timer';
 import { Link } from "react-router-dom";
 //import CountDown from './CountDown';
 // React component for the wishes website
-const WishPage = () => {
+const Congrats = () => {
   // Set the visa interview date (replace with the actual date)
   const visaInterviewDate = new Date('2023-12-27T09:57:00');
   const [key, setKey] = useState(0);
@@ -108,14 +108,14 @@ console.log("Date.now()", Date.now(), remainingTime)
   return (
     <div className="wishes-container">
       <header>
-        <h2>{`Best Wishes, My Dear Friend!`}</h2>
+        <h2>{`Congratulations, My Dear Friend!`}</h2>
       </header>
-      <section className="good-luck-section">
+      {/* <section className="good-luck-section">
         <h4>🌟 Good Luck on Your Visa Interview! 🌟</h4>
         <p>
           Dear Sahithi,<br />
           Wishing you all the best as you embark on this incredible journey. You've got this! Can't wait to hear about your successful visa interview.</p>
-      </section>
+      </section> */}
       <h2>⏰ Countdown Timer</h2>
       {remainingTime < 0 ? 
       <section className="countdown-section"  style={{display: "flex", justifyContent: "space-evenly"}}>
@@ -246,18 +246,17 @@ console.log("Date.now()", Date.now(), remainingTime)
         )}
       </CountdownCircleTimer> 
       </section>
-      <Link to={`/congrats`} style={{textDecoration: "none !important"}}>
-      <section className="countdown-section"  style={{display: "flex", flexDirection: "column",alignContent:"center", flexWrap:"wrap",  justifyContent: "space-evenly", position:"relative", zIndex:"1"}}>
-          <div style={{cursor: "pointer"}}>Congratulations on successfully completing your visa interview. Click Here Please</div>     
-      </section>
+      <section className="countdown-section"  style={{display: "flex", flexDirection: "column",alignContent:"center", flexWrap:"wrap",  justifyContent: "space-evenly"}}>
+          {/* <div>Congratulations on successfully completing your visa interview.</div> */}
+          <div>  It's Processing Time! Best of Luck and Have a great journey ahead!!</div>
 
-      </Link>
+      </section>
       </>
 }
 
-      <div class="gif_container">
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="Cute animated illustration"/>
-            </div>        
+         <div class="gif_container">
+         <img src="https://media0.giphy.com/media/T86i6yDyOYz7J6dPhf/giphy.gif" alt="Cute animated illustration"/>
+               </div>         
       <footer>
       <p style={{fontWeight: "bold"}}>Your future is waiting for you. Best of luck!</p>
         <p>
@@ -266,8 +265,13 @@ console.log("Date.now()", Date.now(), remainingTime)
         </p>
         <p>With Best wishes and Love,<br />Saswath </p>
       </footer>
+      <Link to={`/`}>
+      <div style={{display:"flex", flexDirection:"column", justifyContent:"center"}}>
+        <button style={{cursor: "pointer"}}> Go back to previous page</button>
+      </div>
+      </Link>
     </div>
   );
 };
 
-export default WishPage;
+export default Congrats;
